@@ -10,7 +10,7 @@ var express = require('express')
 var config = require('./config/index')
 var axios = require('axios')
 
-var port = process.env.PORT || config.build.port
+var port = process.env.PORT || config.build.port || 80
 
 var app = express()
 
