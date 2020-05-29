@@ -11,7 +11,7 @@ var config = require('./config/index')
 var axios = require('axios')
 // var http = require('http')
 
-var port = process.env.PORT || config.build.port || 3000
+var port = process.env.PORT || config.build.port || 80
 
 var app = express()
 
@@ -62,7 +62,7 @@ app.use(express.static('./dist'))
 
 
 
-module.exports = app.listen(port, '47.52.115.217',function (err) {
+module.exports = app.listen(port, 'localhost',function (err) {
   if (err) {
     console.log(err)
     return
