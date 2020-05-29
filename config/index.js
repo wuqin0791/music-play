@@ -15,7 +15,7 @@ module.exports = {
   dev: {
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'http://www.wuqin.tech/music-play/dist/',
+    assetsPublicPath: '/',
     proxyTable: {
       // '/api/getDiscList': {
       //   target: 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
@@ -60,7 +60,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: 'http://www.wuqin.tech/music-play/dist/',
 
     /**
      * Source Maps
