@@ -62,7 +62,7 @@ app.use(express.static('./dist'))
 
 
 
-module.exports = app.listen(port, 'localhost',function (err) {
+module.exports = app.listen(port, 'localhost', function (err) {
   if (err) {
     console.log(err)
     return
