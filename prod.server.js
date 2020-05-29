@@ -11,7 +11,7 @@ var config = require('./config/index')
 var axios = require('axios')
 // var http = require('http')
 
-var port = process.env.PORT || config.build.port || 80
+var port = process.env.PORT || config.build.port || 30000
 
 var app = express()
 
