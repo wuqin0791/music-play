@@ -65,7 +65,10 @@ let server = app.listen(port, function (err) {
     console.log(err)
     return
   }
-  console.log('Listening at ' + port + '\n')
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log("应用实例，访问地址为 http://%s:%s", host, port)
 })
 
 // module.exports = app.listen(port, '47.52.115.217', function (err) {
