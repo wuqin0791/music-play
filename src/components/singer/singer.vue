@@ -1,6 +1,6 @@
 
 <!--
- * @Description: This is a XX file
+ * @Description: This is a singer file
  * @Author: JeanneWu
  * @Date: 2020-05-23 21:58:47
 -->
@@ -47,12 +47,11 @@ export default {
     _getSingerList() {
       getSingerList().then((res) => {
         if (res.code === ERR_OK) {
-          console.log(res.data)
           this.singers = this._normalizeSinger(res.data.list)
-          // console.log(this.singers, 'this.singers')
         }
       })
     },
+    // 处理数据
     _normalizeSinger(list) {
       // 思路
       // 先聚合成对象，再根据字母排序

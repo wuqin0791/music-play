@@ -21,7 +21,7 @@ export default {
   props: {
     loop: {
       type: Boolean,
-      default: true
+      default: false
     },
     autoPlay: {
       type: Boolean,
@@ -74,7 +74,7 @@ export default {
       }
 
       // 加左右两边的距离
-      if (this.loop & !isResize) {
+      if (this.loop && !isResize) {
         width += 2 * sliderWidth
       }
       this.$refs.sliderGroup.style.width = width + 'px'
@@ -96,8 +96,8 @@ export default {
         if (this.loop) {
           pageIndex -= 1
         }
-        console.log(this.loop)
-        console.log(pageIndex, 'currentPageIndex')
+        // console.log(this.loop)
+        // console.log(pageIndex, 'currentPageIndex1')
         this.currentPageIndex = pageIndex
 
         if (this.autoPlay) {
@@ -108,9 +108,11 @@ export default {
     },
     _play() {
       let pageIndex = this.currentPageIndex + 1
+      // console.log(pageIndex, 'currentPageIndex2')
       if (this.loop) {
         pageIndex += 1
       }
+      // console.log(pageIndex, 'currentPageIndex3')
       this.timer = setTimeout(() => {
         this.slider.goToPage(pageIndex, 0, 400)
       }, this.interval)

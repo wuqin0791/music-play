@@ -1,7 +1,7 @@
 
 
 /*
- * @Description: This is a XX file
+ * @Description: This is a server file
  * @Author: JeanneWu
  * @Date: 2020-05-29 18:57:54
  */ 
@@ -62,10 +62,10 @@ app.use(express.static('./dist'))
 
 
 
-module.exports = app.listen(port, 'localhost', function (err) {
+module.exports = app.listen(port, '47.52.115.217', function (err) {
   if (err) {
     console.log(err)
     return
   }
-  console.log('Listening at http://localhost:' + port + '\n')
+  console.log('Listening at http://47.52.115.217:' + port + '\n')
 })
