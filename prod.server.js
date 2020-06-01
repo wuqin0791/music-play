@@ -62,10 +62,11 @@ app.use(express.static('./dist'))
 
 
 
-module.exports = app.listen(port, '47.52.115.217', function (err) {
+// module.exports = app.listen(port, '47.52.115.217', function (err) {
+module.exports = app.listen(port, function (err) {
   if (err) {
     console.log(err)
     return
   }
-  console.log('Listening at http://47.52.115.217:' + port + '\n')
+  console.log('Listening at ' + port + '\n')
 })
