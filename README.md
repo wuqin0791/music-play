@@ -2,9 +2,6 @@
 
 > 基于vue-cli自动构建的防QQ音乐项目，具有原生app的性能，注重用户体验。
 
-# demo
-![](demo.gif =100x20)
-
 ## Description
 
 > 1. 抓取QQ音乐线上数据，基于真实数据开发
@@ -31,3 +28,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# demo
+![](demo.gif)
